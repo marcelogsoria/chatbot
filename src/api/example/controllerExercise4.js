@@ -27,34 +27,6 @@ module.exports = fastify => {
     //Hint use \n as endline in the response message
   };
 
-  //Solution:
-/*  const answer = async (request, reply) => {
-    const { body } = request;
-
-    let responseMessage;
-
-    const query = { expand: true, name: body.Body, page: 0, perPage: 10 };
-    const products = await service.getProducts(query);
-    const filteredProducts = products.results;
-
-    const responseMessageLines = [
-      `We have this products for you!`,
-      ...filteredProducts.map(
-        (product, index) => `${index + 1} - ${product.name.en}`
-      )
-    ];
-    responseMessage = responseMessageLines.join('\n');
-
-    reply
-      .code(200)
-      .send(
-        `Hello ${
-          customers[request.body.From] || 'customer'
-        }!! \n${responseMessage}`
-      );
-  }; */
-
-
   return {
     answer
   };

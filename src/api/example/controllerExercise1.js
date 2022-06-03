@@ -1,7 +1,7 @@
 /* eslint-disable no-empty */
 module.exports = () => {
   const answer = async (_, reply) => {
-    // your answer here
+    //your answer here
   };
 
   // SOLUTION
